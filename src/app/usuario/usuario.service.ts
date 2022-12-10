@@ -15,4 +15,22 @@ export class UsuarioService {
 
     return  usuario;
   }
+
+  public listaUsuario():Usuario[]{
+    return [
+      {
+        nome: 'Lucas',
+        email: 'lucas.teste@gmail.com'
+      },
+      {
+        nome: 'Savio',
+        email: 'Savio.teste@gmail.com'
+      },
+      {
+        nome: 'Chico',
+        email: 'chico.teste@gmail.com'
+      },
+    ]
+  }
+
 }
