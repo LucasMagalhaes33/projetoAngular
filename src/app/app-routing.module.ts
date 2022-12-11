@@ -11,6 +11,9 @@ const routes: Routes = [
   {path: 'usuario',
    loadChildren: () => import('./usuario/usuario.module').then(m => m.UsuarioModule)
   },
+  {path: 'estados',
+   loadChildren: () => import('./estados/estados.module').then(m => m.EstadosModule)
+  },
   {
     path: '',
     pathMatch: 'full',
